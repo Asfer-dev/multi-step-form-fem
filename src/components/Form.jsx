@@ -116,8 +116,9 @@ function Form(props) {
 
                     <div className="toggle-wrapper">
                         <h3 style={ {color: !isMonthly && 'var(--clr-neutral-500)'} }>Monthly</h3>
-                        <button className="btn-toggle | btn" style={ {justifyContent: !isMonthly && 'flex-end'} }
-                        onClick={() => setMonthly(!isMonthly)}><div className="circle"></div></button>
+                        <button className="btn-toggle | btn"
+                        onClick={() => setMonthly(!isMonthly)}><div className="circle" 
+                        style={ {transform: !isMonthly && 'translate(23px, 0)'} }></div></button>
                         <h3 style={ {color: isMonthly && 'var(--clr-neutral-500)'} }>Yearly</h3>
                     </div>
                 </div>
